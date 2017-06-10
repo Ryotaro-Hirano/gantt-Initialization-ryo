@@ -87,7 +87,7 @@ var users_data = {
 
 var projects_with_milestones = {
 	"data":[
-		{"id":11, "text":"Project #1", type:gantt.config.types.project.東京都一覧, "progress": 0.6, "open": true},
+		{"id":11, "text":"東京都一覧", type:gantt.config.types.project, "progress": 0.6, "open": true},
 
 		{"id":12, "text":"Task #1", "start_date":"03-04-2013", "duration":"5", "parent":"11", "progress": 1, "open": true},
 		{"id":13, "text":"Task #2", "start_date":"03-04-2013", type:gantt.config.types.project, "parent":"11", "progress": 0.5, "open": true},
