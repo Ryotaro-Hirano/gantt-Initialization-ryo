@@ -3,6 +3,57 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>Basic initialization</title>
 </head>
+<!-- 画面全体の操作をロックする　 -->
+<script type="text/javascript">
+$(function () {
+
+    var lockId = "lockId";
+
+    // 画面操作を無効する
+    lockScreen(lockId);
+
+    // 画面操作を有効にする
+    //unlockScreen(lockId);
+
+    /*
+     * 画面操作を無効にする
+     */
+    //function lockScreen(id) {
+
+        /*
+         * 現在画面を覆い隠すためのDIVタグを作成する
+         */
+        var divTag = $('<div />').attr("id", id);
+
+        /*
+         * スタイルを設定
+         */
+        divTag.css("z-index", "999")
+              .css("position", "absolute")
+              .css("top", "0px")
+              .css("left", "0px")
+              .css("right", "0px")
+              .css("bottom", "0px")
+              .css("background-color", "gray")
+              .css("opacity", "0.8");
+
+        /*
+         * BODYタグに作成したDIVタグを追加
+         */
+        $('body').append(divTag);
+
+    /*
+     * 画面操作無効を解除する
+     */
+    //function unlockScreen(id) {
+
+        /*
+         * 画面を覆っているタグを削除する
+         */
+        //$("#" + id).remove();
+});
+</script>
+
 <script type=”text/javascript” src=”../gantt-Initialization-ryo/js/jquery.min.js”></script>
 	<script src="../gantt-Initialization-ryo/codebase/dhtmlxgantt.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="../gantt-Initialization-ryo/codebase/dhtmlxgantt.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -42,60 +93,5 @@ google.maps.event.addDomListener(window,'load',function(){
 </script>
  -->
 
-<!-- 画面全体の操作をロックする　 -->
-<script type="text/javascript">
-
-
-$(function () {
-
-    var lockId = "lockId";
-
-    // 画面操作を無効する
-    lockScreen(lockId);
-
-    // 画面操作を有効にする
-    //unlockScreen(lockId);
-
-    /*
-     * 画面操作を無効にする
-     */
-    //function lockScreen(id) {
-
-        /*
-         * 現在画面を覆い隠すためのDIVタグを作成する
-         */
-        var divTag = $('<div />').attr("id", id);
-
-        /*
-         * スタイルを設定
-         */
-        divTag.css("z-index", "999")
-              .css("position", "absolute")
-              .css("top", "0px")
-              .css("left", "0px")
-              .css("right", "0px")
-              .css("bottom", "0px")
-              .css("background-color", "gray")
-              .css("opacity", "0.8");
-
-        /*
-         * BODYタグに作成したDIVタグを追加
-         */
-        $('body').append(divTag);
-    
-
-    /*
-     * 画面操作無効を解除する
-     */
-    //function unlockScreen(id) {
-
-        /*
-         * 画面を覆っているタグを削除する
-         */
-        //$("#" + id).remove();
-
-
-});
-</script>
 </div>
 </body>
