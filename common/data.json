@@ -1,14 +1,14 @@
-<a href="https://www.expedia.co.jp/">URL</a>
+<a href="#">URL</a>
 {
 	"data": [{
 		"id": 1,
 		"start_date": "2013-04-01 00:00:00",
 		"duration": 5,
-		"text": '"https://www.expedia.co.jp/"',
+		"text": "リアル脱出ゲーム",
 		"progress": 0.8,
 		"sortorder": 20,
 		"parent": 0,
-		"open": true,
+		"open": true
 	}, {
 		"id": 2,
 		"start_date": "2013-04-06 00:00:00",
