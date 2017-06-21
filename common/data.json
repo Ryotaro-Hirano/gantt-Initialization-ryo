@@ -3,7 +3,7 @@
 		"id": 1,
 		"start_date": "2013-04-01 00:00:00",
 		"duration": 5,
-		"text": "<![CDATA[ <a href='http://yahoo.co.jp' target='_blank'></a> ]]>",
+		"text": "<![CDATA[ text ]]>",
 		"progress": 0.8,
 		"sortorder": 20,
 		"parent": 0,
